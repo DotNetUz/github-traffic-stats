@@ -3,7 +3,7 @@
 
 AppID_service=ghstatsAppID
 DB_service=ghstatsDB
-DDE_service=ghstatsDDE
+#DDE_service=ghstatsDDE
 
 # Initial name of service keys
 DB_service_key=ghstatskey

@@ -13,4 +13,4 @@ ibmcloud cf create-service-key ghstatsDB $DB_service_key
 ibmcloud resource service-instance-create $AppID_service appid graduated-tier us-south
 
 # Create DDE service (dynamic dashboard embedded)
-ibmcloud resource service-instance-create $DDE_service dynamic-dashboard-embedded lite us-south
+#ibmcloud resource service-instance-create $DDE_service dynamic-dashboard-embedded lite us-south

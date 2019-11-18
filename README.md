@@ -1,3 +1,7 @@
+# Attention
+
+The code in this branch does not need a deployed service IBM Cognose Dashboard Embedded. Statistics are only displayed in a text-based / table version, not graphically.
+
 # Github Traffic Analytics: Combining serverless and Cloud Foundry for data retrieval and analytics
 This repository contains the code for an [IBM Cloud solution tutorial](https://cloud.ibm.com/docs/tutorials?topic=solution-tutorials-serverless-github-traffic-analytics). In the tutorial, we create an application to automatically collect Github traffic statistics for repositories and provide the foundation for traffic analytics. Github only provides access to the traffic data for the last 14 days. If you want to analyze statistics over a longer period of time, you need to download and store that data yourself. The app and the serverless action discussed in this tutorial implement a multi-tenant-ready solution to manage repositories, automatically collect traffic data on a daily or weekly schedule, and to view and analyze the collected data.
 
@@ -23,7 +27,6 @@ Important files in the **backend** directory:
 * [manifest.yml](backend/manifest.yml): Manifest file to simplify app deployment, contains service bindings
 * [requirements.in](backend/requirements.in): Input file for automatically generating the requirements file using **pip-compile**
 * [config.json.sample](backend/config.json.sample): Sample configuration file for testing the app locally. The service credentials can be taken from the service keys or obtain in the IBM Cloud console.
-* [dashboard.json](backend/dashboard.json): Canned (pre-created) dashboard to use with the IBM Dynamic Dashboard Embedded service. It is adapted at runtime.
 
 Important files in the **functions** directory:
 * [__main__.py](functions/__main__.py): Code for Cloud Functions action, written in Python, uses the Github v3 API
